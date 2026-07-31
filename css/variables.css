@@ -1,0 +1,70 @@
+/* ===========================
+   Color
+   =========================== */
+
+:root {
+
+    /* Primary */
+    --color-primary: #FF8C42;
+    --color-primary-light: #FFF8F2;
+
+    /* Background */
+    --color-background: #F8F9FB;
+    --color-surface: #FFFFFF;
+
+    /* Text */
+    --color-text: #FF8C42;
+    --color-text-secondary: #666666;
+    --color-text-light: #777777;
+
+    /* Border */
+    --color-border: #D5D8DD;
+    --color-step: #E5E7EB;
+
+    /* Shadow */
+    --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.08);
+    --shadow-modal: 0 24px 48px rgba(0,0,0,.25);
+    --shadow-hover: 0 12px 28px rgba(0,0,0,.12);
+
+    /* Radius */
+    --radius-small: 10px;
+    --radius-medium: 14px;
+    --radius-card: 16px;
+    --radius-large: 20px;
+    --radius-zone: 14px;
+
+    /* Transition */
+    --transition-default: .25s;
+
+    /* Font */
+    --font-family:
+        "Pretendard",
+        "Noto Sans KR",
+        sans-serif;
+
+    /* Button */
+    --button-primary: #FF8C42;
+    --button-primary-hover: #F27A2A;
+    
+    --button-dark: #666666;
+    --button-dark-hover: #444444;
+    
+    --button-light: #FFFFFF;
+    --button-light-hover: #F5F5F5;
+
+/* ===========================
+   State
+   =========================== */
+
+/* Hover */
+--color-hover: #FFF3EA;
+
+/* Disabled */
+--color-disabled: #D9D9D9;
+
+/* Overlay */
+--color-overlay: rgba(0,0,0,.65);
+
+/* Placeholder */
+--color-placeholder: #A8A8A8;
+}

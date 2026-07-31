@@ -1,0 +1,129 @@
+/* =====================================================
+   Modal
+   ===================================================== */
+
+/* 배경 */
+
+.modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    background: var(--color-overlay);
+
+    z-index: 9999;
+
+}
+
+
+/* 열림 */
+
+.modal.show {
+
+    display: flex;
+
+}
+
+
+/* 내용 */
+
+.modal-content {
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 90vw;
+    max-height: 90vh;
+
+}
+
+
+/* 이미지 */
+
+.modal-image {
+
+    display: block;
+
+    max-width: 90vw;
+    max-height: 90vh;
+
+    object-fit: contain;
+
+    border-radius: var(--radius-medium);
+
+    background: var(--color-surface);
+
+    padding: 12px;
+
+    box-shadow: var(--shadow-modal);
+
+}
+
+
+/* 닫기 버튼 */
+
+.modal-close {
+
+    position: absolute;
+
+    top: -18px;
+    right: -18px;
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: var(--color-surface);
+
+    color: var(--color-text-secondary);
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition:
+        transform var(--transition-default),
+        background var(--transition-default),
+        color var(--transition-default);
+
+}
+
+
+/* Hover */
+
+.modal-close:hover {
+
+    background: var(--color-primary);
+
+    color: var(--color-surface);
+
+    transform: rotate(90deg);
+
+}
+
+
+/* 모바일 */
+
+@media (max-width: 768px) {
+
+    .modal-image {
+
+        max-width: 95vw;
+
+        max-height: 80vh;
+
+    }
+
+}

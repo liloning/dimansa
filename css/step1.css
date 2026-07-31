@@ -1,0 +1,265 @@
+/* ===========================
+   Step 1
+   =========================== */
+
+
+/* 업로드 카드 */
+.upload-card {
+
+    width:100%;
+
+    max-width:720px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    background:var(--color-surface);
+
+    border-radius:var(--radius-card);
+
+    padding:40px 48px;
+
+    box-shadow:var(--shadow-card);
+
+}
+
+/* 업로드 제목 -이미지를 업로드하세요. */
+.upload-title {
+
+    margin:0 0 8px;
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: var(--color-text);
+
+}
+
+/* 업로드 설명 */
+.upload-desc {
+
+    margin-bottom:20px;
+
+    color: var(--color-text-light);
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    text-align: center;
+
+}
+
+/* ===========================
+   Upload Zone
+   =========================== */
+
+/* 업로드 영역 */
+.upload-zone {
+    width: 100%;
+    min-height: 240px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    border: 2px dashed var(--color-border);
+    border-radius: var(--radius-zone);
+
+    cursor: pointer;
+
+    transition:
+        border-color var(--transition-default),
+        background-color var(--transition-default);
+}
+
+.upload-zone:focus-within {
+
+    border-color: var(--color-primary);
+
+}
+
+/* 업로드 영역 Hover */
+.upload-zone:hover {
+    border-color: var(--color-primary);
+
+    background: var(--color-primary-light);
+}
+
+/* 업로드 아이콘 */
+.upload-icon {
+    font-size: 60px;
+}
+
+/* 업로드 문구 */
+.upload-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 8px;
+}
+
+/* 메인 문구 - 파일을 선택하세요 */
+.upload-text strong {
+    font-size: 15px;
+    font-weight: 700;
+
+    color: var(--color-text);
+}
+
+/* 보조 문구 - 클릭하거나 드래그하여 업로드 */
+.upload-text span {
+    font-size: 10px;
+
+    color: var(--color-text-light);
+}
+
+
+/* ===========================
+   Button
+   =========================== */
+
+/* 다음 버튼 */
+.next-button {
+    width: 180px;
+
+    margin-top: 24px;
+}
+
+/* 파일 정보 */
+.file-info {
+    margin-top: 24px;
+    min-height: 72px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* 안내 문구 -선택된 파일이 없습니다. */
+.file-placeholder {
+    margin: 0;
+
+    color: var(--color-text-secondary);
+
+    font-size: 10px;
+}
+
+/* 파일 상세 정보 */
+.file-details {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+/* 파일 상세 정보 텍스트 */
+.file-details p {
+    margin: 0;
+
+    font-size: 14px;
+
+    color: var(--color-text-secondary);
+}
+
+/* 파일 이름 */
+#fileName {
+    font-weight: 700;
+
+    color: var(--color-text);
+}
+
+/* 드래그 중인 업로드 영역 */
+.upload-zone.dragover {
+    border-color: var(--color-primary);
+
+    background: var(--color-primary-light);
+
+    transform: scale(1.01);
+
+    box-shadow:var(--shadow-hover);
+}
+
+/* =====================================================
+   Guide Download
+   ===================================================== */
+
+.guide-download {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin: 0 0 10px;
+
+}
+
+.guide-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding:8px 14px;
+
+    border: 1px solid var(--color-primary);
+
+    border-radius: 999px;
+
+    background: #ffffff;
+
+    color: var(--color-text);
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background .2s,
+        border-color .2s,
+        transform .2s;
+
+}
+
+.guide-button:hover {
+
+    background: var(--color-primary);
+
+    border-color: var(--color-primary);
+
+    color: #ffffff;
+
+    transform: translateY(-1px);
+
+    box-shadow:var(--shadow-hover);
+
+}
+
+/* ==========================================
+   STEP1 Layout
+   ========================================== */
+
+#step1 .step-container {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}

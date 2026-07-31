@@ -1,0 +1,365 @@
+/* ==========================================
+   Responsive Layout
+   ========================================== */
+
+/*
+    이 파일에서는 화면의 "세로 높이"를 기준으로
+    Header, Stepper, Card의 여백만 조금씩 줄여
+    어떤 노트북에서도 잘리지 않도록 한다.
+
+    디자인 비율은 유지하고
+    공간만 압축하는 것이 목적이다.
+*/
+
+
+/* ==========================================
+   높이 900px 이하
+   (MacBook Air 등)
+   ========================================== */
+
+@media (max-height: 900px) {
+
+    /* Header */
+    .app-header{
+
+        padding: 20px 24px 14px;
+
+    }
+
+    .site-title{
+
+        font-size: 28px;
+
+    }
+
+    .site-desc{
+
+        margin-top: 4px;
+
+        font-size: 14px;
+
+    }
+
+    /* Stepper */
+
+    .stepper{
+
+        padding: 14px 24px;
+
+    }
+
+    .step-circle{
+
+        width: 34px;
+        height: 34px;
+
+        font-size: 14px;
+
+    }
+
+    .step span{
+
+        margin-top: 6px;
+
+        font-size: 13px;
+
+    }
+
+    .step-line{
+
+        margin: 0 10px;
+
+    }
+
+    /* Main */
+
+    .main-content{
+
+        padding: 20px;
+
+    }
+
+    /* Upload Card */
+
+    .upload-card{
+
+        padding: 36px;
+
+    }
+
+    .upload-title{
+
+        margin-bottom: 10px;
+
+    }
+
+    .upload-desc{
+
+        margin-bottom: 24px;
+
+    }
+
+    .upload-zone{
+
+        padding: 28px;
+
+    }
+
+    .file-info{
+
+        margin-top: 18px;
+
+    }
+
+    .next-button{
+
+        margin-top: 24px;
+
+    }
+
+    .preview-card{
+
+    padding:32px;
+
+}
+
+.preview-area{
+
+    min-height:360px;
+
+}
+
+.result-header{
+
+    padding:20px 24px;
+
+}
+
+.result-buttons{
+
+    padding:20px 24px;
+
+}
+
+.image-grid{
+
+    gap:14px;
+
+}
+
+}
+
+
+/* ==========================================
+   높이 800px 이하
+   ========================================== */
+
+@media (max-height: 800px) {
+
+    .app-header{
+
+        padding: 16px 20px 10px;
+
+    }
+
+    .site-title{
+
+        font-size: 24px;
+
+    }
+
+    .site-desc{
+
+        font-size: 13px;
+
+    }
+
+    .stepper{
+
+        padding: 10px 20px;
+
+    }
+
+    .step-circle{
+
+        width: 30px;
+        height: 30px;
+
+        font-size: 13px;
+
+    }
+
+    .step span{
+
+        font-size: 12px;
+
+    }
+
+    .main-content{
+
+        padding: 16px;
+
+    }
+
+    .upload-card{
+
+        padding: 28px;
+
+    }
+
+    .upload-zone{
+
+        padding: 22px;
+
+    }
+
+    .upload-icon{
+
+        font-size: 44px;
+
+    }
+
+    .upload-title{
+
+        font-size: 24px;
+
+    }
+
+    .upload-desc{
+
+        margin-bottom: 18px;
+
+    }
+
+    .next-button{
+
+        margin-top: 18px;
+
+    }
+
+    .preview-card{
+
+    padding:24px;
+
+}
+
+.preview-area{
+
+    min-height:320px;
+
+}
+
+.image-grid{
+
+    gap:12px;
+
+}
+
+.result-title{
+
+    font-size:22px;
+
+}
+
+}
+
+
+/* ==========================================
+   높이 700px 이하
+   ========================================== */
+
+@media (max-height: 700px) {
+
+    .app-header{
+
+        padding: 12px 18px 8px;
+
+    }
+
+    .site-title{
+
+        font-size: 22px;
+
+    }
+
+    .site-desc{
+
+        display: none;
+
+    }
+
+    .stepper{
+
+        padding: 8px 16px;
+
+    }
+
+    .step-circle{
+
+        width: 28px;
+        height: 28px;
+
+    }
+
+    .main-content{
+
+        padding: 12px;
+
+    }
+
+    .upload-card{
+
+        padding: 22px;
+
+    }
+
+    .upload-title{
+
+        font-size: 22px;
+
+    }
+
+    .upload-desc{
+
+        margin-bottom: 14px;
+
+    }
+
+    .upload-zone{
+
+        padding: 18px;
+
+    }
+
+    .upload-icon{
+
+        font-size: 38px;
+
+    }
+
+    .preview-card{
+
+    padding:18px;
+
+}
+
+.preview-area{
+
+    min-height:260px;
+
+}
+
+.image-grid{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+.result-buttons{
+
+    flex-wrap:wrap;
+
+}
+
+}
+

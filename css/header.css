@@ -1,0 +1,118 @@
+/* ===========================
+   Header
+   =========================== */
+
+.app-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 32px 24px 20px;
+}
+
+.site-title {
+    margin: 0;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    color: var(--color-text);
+}
+
+.site-desc {
+    margin-top: 6px;
+
+    font-size: 16px;
+
+    color: var(--color-text-secondary);
+
+    text-align: center;
+}
+
+
+/* ===========================
+   Stepper
+   =========================== */
+
+.stepper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 0 24px 24px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.step-circle {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: var(--color-step);
+    color: var(--color-text-secondary);
+
+    font-size: 16px;
+    font-weight: 700;
+
+    transition:
+        background var(--transition-default),
+        color var(--transition-default),
+        transform var(--transition-default);
+}
+
+.step span {
+    font-size: 14px;
+    font-weight: 500;
+
+    color: var(--color-text-secondary);
+
+    transition:
+        color var(--transition-default),
+        font-weight var(--transition-default);
+}
+
+/* Step 연결선 */
+.step-line {
+    width: 70px;
+    height: 2px;
+
+    background: var(--color-step);
+
+    transition: background var(--transition-default);
+}
+
+/* 현재까지 진행된 연결선 */
+.step-line.active {
+    background: var(--color-primary);
+}
+
+
+/* ===========================
+   Active Step
+   =========================== */
+
+.step.active .step-circle {
+    background: var(--color-primary);
+
+    color: var(--color-surface);
+}
+
+.step.active span {
+    color: var(--color-text);
+
+    font-weight: 700;
+}

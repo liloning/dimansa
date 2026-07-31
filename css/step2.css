@@ -1,0 +1,122 @@
+/* ===========================
+   Step 2
+   =========================== */
+
+/* 카드 */
+
+.preview-card{
+
+    width:100%;
+    max-width:900px;
+
+    background: var(--color-surface);
+
+    border:1px solid var(--color-border);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow: var(--shadow-card);
+
+}
+
+/* 제목 */
+.preview-card h2{
+
+    margin:0 0 24px;
+
+    text-align:center;
+
+    font-size:30px;
+
+}
+
+/* 이미지 영역 */
+.preview-area{
+
+    width:100%;
+
+    min-height:420px;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    border:2px dashed var(--color-border);
+
+    border-radius:16px;
+
+    background: var(--color-background);
+
+    overflow:hidden;
+
+}
+/* 이미지 */
+.preview-image{
+
+    display: none;
+
+    max-width:100%;
+    max-height:100%;
+
+    object-fit:contain;
+
+}
+
+.preview-placeholder{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    gap:12px;
+
+    color:var(--color-placeholder);
+
+}
+
+.placeholder-icon{
+
+    font-size:60px;
+
+}
+
+/* 버튼 영역 */
+.step-buttons{
+
+    margin-top:28px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:16px;
+
+}
+
+/* 버튼 */
+.step-buttons button{
+
+    flex:1;
+
+}
+
+/* ==========================================
+   STEP2 Layout
+   ========================================== */
+
+#step2 .step-container {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+}

@@ -1,0 +1,252 @@
+/* =====================================================
+   Step 3
+   ===================================================== */
+
+/* Step 컨테이너 */
+#step3 .step-container {
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+/* 결과 카드 */
+.result-card {
+
+    width: min(1200px, 100%);
+
+    display: flex;
+    flex-direction: column;
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+
+    overflow: hidden;
+
+}
+
+
+/* =====================================================
+   Header
+   ===================================================== */
+
+.result-header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 24px 28px;
+
+    border-bottom: 1px solid var(--color-border);
+
+}
+
+
+.result-title {
+
+    margin: 0;
+
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+
+.result-desc {
+
+    margin: 6px 0 0;
+
+    color: var(--color-text-light);
+    font-size: 14px;
+
+}
+
+
+/* 생성 개수 */
+.piece-count {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 88px;
+
+    padding: 8px 16px;
+
+    border-radius: 999px;
+
+    /* background: var(--color-primary); */
+    background: var(--color-surface);
+
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+
+/* =====================================================
+   Grid
+   ===================================================== */
+
+.image-grid {
+
+    width:100%;
+    min-height:400px;
+
+    overflow-y: auto;
+
+    padding: 24px;
+
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 18px;
+
+}
+
+
+/* 이미지 카드 */
+.image-item {
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+/* 썸네일 */
+.image-thumb {
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+
+    border-radius:var(--radius-medium);
+
+    cursor: pointer;
+
+    transition:
+        transform .18s ease,
+        box-shadow .18s ease,
+        border-color .18s ease;
+
+}
+
+
+/* Hover */
+
+.image-thumb:hover {
+
+    transform: translateY(-1px);
+
+    border-color: var(--color-primary);
+
+    box-shadow: var(--shadow-hover);
+
+}
+
+
+/* 이미지 */
+
+.image-thumb img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+}
+
+
+/* 번호 */
+
+.image-index {
+
+    font-size: 13px;
+
+    color: var(--color-text-light);
+
+}
+
+
+/* =====================================================
+   Bottom Buttons
+   ===================================================== */
+
+.result-buttons {
+
+    min-width:140px;
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+
+    padding: 24px 28px;
+
+    border-top: 1px solid var(--color-border);
+
+}
+
+
+/* =====================================================
+   Empty
+   ===================================================== */
+
+.empty-result {
+
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-text-light);
+
+    font-size: 15px;
+
+}
+
+
+/* =====================================================
+   Scrollbar
+   ===================================================== */
+
+.image-grid::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+.image-grid::-webkit-scrollbar-thumb {
+
+    background: rgba(0,0,0,.18);
+
+    border-radius: 999px;
+
+}
+
+.image-grid::-webkit-scrollbar-track {
+
+    background: transparent;
+
+}
