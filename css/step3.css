@@ -106,11 +106,9 @@
 
     display: grid;
 
-    grid-template-columns: repeat(6, 70px);
+    grid-template-columns: repeat(6, 1fr);
 
-    gap: 5px;
-
-    justify-content:center;
+    gap: 12px;
 
 }
 
