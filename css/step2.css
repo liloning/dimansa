@@ -115,10 +115,13 @@
 
 #step2 .step-container {
 
-    width: 100%;
+    width:100%;
+    min-width:760px;
 
-    display: flex;
+    display:flex;
 
-    justify-content: center;
+    justify-content:center;
+
+    margin:0 auto;
 
 }
