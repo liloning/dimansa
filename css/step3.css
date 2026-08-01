@@ -105,14 +105,14 @@
 
     overflow-y: auto;
 
-    padding: 20px;
+    padding: 15px;
 
     display: grid;
 
     grid-template-columns: repeat(6, 70px);
     justify-content:center;
 
-    gap: 12px;
+    gap: 20px;
 
 }
 
