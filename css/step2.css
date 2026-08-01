@@ -6,8 +6,8 @@
 
 .preview-card{
 
-    width:100%;
-    max-width:620px;
+    width:760px;
+    max-width:100%;
 
     background: var(--color-surface);
 
@@ -113,7 +113,7 @@
    STEP2 Layout
    ========================================== */
 
-#step2 .step-container {
+/* #step2 .step-container {
 
     width:100%;
     min-width:720px;
@@ -124,4 +124,4 @@
 
     margin:0 auto;
 
-}
+} */

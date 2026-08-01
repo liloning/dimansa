@@ -34,6 +34,21 @@ body {
 
 }
 
+/* Step 공통 컨테이너 */
+
+.step-container{
+
+    width:100%;
+    max-width:760px;
+
+    display:flex;
+
+    justify-content:center;
+
+    margin:0 auto;
+
+}
+
 /* 앱 전체 */
 .app {
 
