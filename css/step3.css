@@ -102,7 +102,6 @@
 .image-grid {
 
     width:100%;
-    min-height:400px;
 
     overflow-y: auto;
 
@@ -128,7 +127,7 @@
 
     align-items:center;
 
-    gap:10px;
+    gap:20px;
 
 }
 
