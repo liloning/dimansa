@@ -6,10 +6,13 @@
 #step3 .step-container {
 
     width:100%;
+    max-width:760px;
 
     display:flex;
 
     justify-content:center;
+
+    margin:0 auto;
 
 }
 
@@ -17,7 +20,7 @@
 /* 결과 카드 */
 .result-card {
 
-    width: min(760px, 100%);
+    width: 100%;
 
     display: flex;
     flex-direction: column;
