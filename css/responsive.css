@@ -121,31 +121,43 @@
 
     padding:32px;
 
-}
+    }
 
-.preview-area{
+    .preview-area{
 
     min-height:360px;
 
-}
+    }
 
-.result-header{
-
-    padding:20px 24px;
-
-}
-
-.result-buttons{
+    .result-header{
 
     padding:20px 24px;
 
-}
+    }
 
-.image-grid{
+    .result-buttons{
+
+    padding:20px 24px;
+
+    }
+
+    .image-grid{
 
     gap:14px;
 
-}
+    }
+
+    .result-card{
+
+    border-radius:12px;
+
+    }
+
+    .step-line{
+
+    width:50px;
+
+    }
 
 }
 
@@ -351,7 +363,8 @@
 
 .image-grid{
 
-    grid-template-columns:repeat(6,1fr);
+    grid-template-columns: repeat(6, 70px);
+    justify-content:center;
 
 }
 
@@ -363,14 +376,3 @@
 
 }
 
-.result-card{
-
-    border-radius:12px;
-
-}
-
-.step-line{
-
-    width:50px;
-
-}
