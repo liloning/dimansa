@@ -110,10 +110,11 @@
 
     display: grid;
 
-    grid-template-columns:repeat(6,90px);
+    grid-template-columns:repeat(6,80px);
+
     justify-content:center;
 
-    gap: 10px;
+    gap:12px;
 
 }
 
@@ -121,7 +122,7 @@
 /* 이미지 카드 */
 .image-item {
 
-    width:90px;
+    width:80px;
 
     display:flex;
     flex-direction:column;
@@ -136,8 +137,8 @@
 /* 썸네일 */
 .image-thumb {
 
-    width:90px;
-    height:90px;
+    width:80px;
+    height:80px;
 
     /* aspect-ratio: 1 / 1; */
 
